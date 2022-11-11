@@ -23,7 +23,7 @@ func NewShortenLogic(ctx context.Context, svcCtx *svc.ServiceContext) *ShortenLo
 }
 
 func (l *ShortenLogic) Shorten(req *types.ShortenReq) (resp *types.ShortenResp, err error) {
-	// todo: add your logic here and delete this line
+	// todo: add your logic here and delete this line2333
 
 	return &types.ShortenResp{Shorten: "23333"}, nil
 }
