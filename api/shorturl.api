@@ -1,0 +1,50 @@
+syntax = "v1"
+
+info (
+	title: // TODO: add title
+	desc: // TODO: add description
+	author: "lzy"
+	email: "951689833@qq.com"
+)
+
+type request {
+	// TODO: add members here and delete this comment
+}
+
+type response {
+	// TODO: add members here and delete this comment
+}
+
+type (
+	expandReq {
+		Shorten string `form:"shorten"`
+	}
+	expandResp {
+		Url string `form:"url"`
+	}
+)
+
+type (
+	shortenReq {
+		Url string `form:"url"`
+	}
+
+	shortenResp {
+		Shorten string `json:"shorten"`
+	}
+)
+
+service shorturl-api {
+	@handler GetUser // TODO: set handler name and delete this comment
+	get /users/id/:userId(request) returns(response)
+	
+	@handler CreateUser // TODO: set handler name and delete this comment
+	post /users/create(request)
+	
+	@handler ShortenHandler
+	get /shorten(shortenReq) returns(shortenResp)
+	
+	@handler ExpandHandler
+	get /expand(shortenReq) returns(shortenResp)
+	
+}
