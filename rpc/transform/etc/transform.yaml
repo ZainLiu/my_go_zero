@@ -4,3 +4,9 @@ Etcd:
   Hosts:
   - 120.78.183.148:2379
   Key: transform.rpc
+
+
+DataSource: root:aa23456@tcp(101.43.25.116:3306)/gozero
+Table: shorturl
+Cache:
+  - Host: 127.0.0.1:6379
