@@ -1,3 +1,9 @@
 Name: shorturl-api
 Host: 0.0.0.0
 Port: 8888
+
+Transform:
+  Etcd:
+    Host:
+      - 120.78.183.148:2379
+    Key: transform.rpc
