@@ -1,9 +1,8 @@
 package handler
 
 import (
-	"net/http"
-
 	"github.com/zeromicro/go-zero/rest/httpx"
+	"net/http"
 	"shorturl/api/internal/logic"
 	"shorturl/api/internal/svc"
 	"shorturl/api/internal/types"
