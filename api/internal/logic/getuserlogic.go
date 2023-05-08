@@ -26,5 +26,7 @@ func NewGetUserLogic(ctx context.Context, svcCtx *svc.ServiceContext) *GetUserLo
 func (l *GetUserLogic) GetUser(req *types.Request) (resp *types.Response, err error) {
 	// todo: add your logic here and delete this line
 
-	return
+	return &types.Response{
+		UserName: "lzy",
+	}, nil
 }

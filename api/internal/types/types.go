@@ -5,6 +5,7 @@ type Request struct {
 }
 
 type Response struct {
+	UserName string `form:"user_name"`
 }
 
 type ExpandReq struct {
