@@ -5,5 +5,5 @@ Port: 8888
 Transform:
   Etcd:
     Hosts:
-      - 120.78.183.148:2379
+      - 101.43.25.116:2379
     Key: transform.rpc
